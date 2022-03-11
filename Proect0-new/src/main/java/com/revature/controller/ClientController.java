@@ -30,17 +30,9 @@ public class ClientController implements Controller{
 
         //pathParam to get the String inside the brackets
         String clientId = ctx.pathParam("clientId");
-        try {
+
             Client client = clientService.getClientByID(clientId);
             ctx.json(client);
-
-        }catch(ClientNotFoundException e){ //TODO 35: do a try-catch for the exceptions and return status code 404
-            ctx.status(404);
-            ctx.json(e.getMessage());
-        }catch (IllegalArgumentException e){
-            ctx.status(404);
-            ctx.json(e.getMessage());
-        }
     };
 
     private Handler updateClient = (ctx) -> {

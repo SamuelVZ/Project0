@@ -16,9 +16,17 @@ public class ClientService {
         this.clientDao = new ClientDao();
     }
 
+
+    //TODO 39: create a constructor for testing mock clients so we don't access to the real database
+    public ClientService(ClientDao mockDao){
+        this.clientDao = mockDao;
+    }
+
     public List<Client> getAllClients() throws SQLException {
         return this.clientDao.getAllClients();
     }
+
+
 
     public Client getClientByID(String id) throws SQLException, ClientNotFoundException {
         //TODO 34: check if the input is valid, if not throw a IllegalArgumentException
@@ -34,8 +42,5 @@ public class ClientService {
         }catch (NumberFormatException e) {
             throw new IllegalArgumentException("Id provided is invalid: " + id);
         }
-
-
-
     }
 }

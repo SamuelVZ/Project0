@@ -1,6 +1,7 @@
 package com.revature.main;
 
 import com.revature.controller.ClientController;
+import com.revature.controller.ExceptionController;
 import com.revature.controller.TestController;
 import com.revature.controller.Controller;
 import io.javalin.Javalin;
@@ -13,13 +14,13 @@ public class Driver {
         //TODO 28: create an instance of javalin
         Javalin app = Javalin.create();
 
-        mapControllers (app, new TestController(), new ClientController());
+        mapControllers (app, new TestController(), new ClientController(), new ExceptionController());
 
         app.start();
 
 
         //TODO 23: test the dao layer
-       /*ClientDao clientDao = new ClientDao();
+       /* ClientDao clientDao = new ClientDao();
         System.out.println(clientDao.getClientById(1));
 
         System.out.println(clientDao.getAllClients());

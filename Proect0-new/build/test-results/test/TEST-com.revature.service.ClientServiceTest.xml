@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.revature.service.ClientServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-11T22:36:53" hostname="DESKTOP-RVLR18L" time="0.266">
+  <properties/>
+  <testcase name="testGetStudentById_incorrectId()" classname="com.revature.service.ClientServiceTest" time="0.25"/>
+  <testcase name="testGetAllClients()" classname="com.revature.service.ClientServiceTest" time="0.011"/>
+  <testcase name="testGetStudentById()" classname="com.revature.service.ClientServiceTest" time="0.002"/>
+  <testcase name="testGetStudentById_SQLException()" classname="com.revature.service.ClientServiceTest" time="0.002"/>
+  <testcase name="testGetStudentById_notExistentId()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
