@@ -1,0 +1,78 @@
+11 03 2022 - 21:49:12.884 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+11 03 2022 - 21:49:12.892 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @282ms to org.eclipse.jetty.util.log.Slf4jLog
+11 03 2022 - 21:49:12.893 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+11 03 2022 - 21:49:12.905 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+11 03 2022 - 21:49:12.906 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+11 03 2022 - 21:49:13.111 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+11 03 2022 - 21:49:13.111 [main] INFO  io.javalin.Javalin - Javalin started in 218ms \o/
+11 03 2022 - 21:49:19.443 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients
+11 03 2022 - 21:51:01.451 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1
+11 03 2022 - 21:51:05.010 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/hyd
+11 03 2022 - 21:56:24.592 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+11 03 2022 - 21:56:24.599 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @293ms to org.eclipse.jetty.util.log.Slf4jLog
+11 03 2022 - 21:56:24.600 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+11 03 2022 - 21:56:24.611 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+11 03 2022 - 21:56:24.611 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+11 03 2022 - 21:56:24.809 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+11 03 2022 - 21:56:24.810 [main] INFO  io.javalin.Javalin - Javalin started in 211ms \o/
+11 03 2022 - 21:56:30.888 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients
+11 03 2022 - 21:56:30.889 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Request to get all the clients
+11 03 2022 - 22:12:27.478 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+11 03 2022 - 22:12:27.485 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @275ms to org.eclipse.jetty.util.log.Slf4jLog
+11 03 2022 - 22:12:27.486 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+11 03 2022 - 22:12:27.499 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+11 03 2022 - 22:12:27.499 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+11 03 2022 - 22:12:27.706 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+11 03 2022 - 22:12:27.707 [main] INFO  io.javalin.Javalin - Javalin started in 221ms \o/
+11 03 2022 - 22:13:46.859 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+11 03 2022 - 22:13:46.866 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @270ms to org.eclipse.jetty.util.log.Slf4jLog
+11 03 2022 - 22:13:46.867 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+11 03 2022 - 22:13:46.879 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+11 03 2022 - 22:13:46.879 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+11 03 2022 - 22:13:47.085 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+11 03 2022 - 22:13:47.086 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+11 03 2022 - 22:13:56.716 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients
+11 03 2022 - 22:13:56.716 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the clients
+11 03 2022 - 22:14:17.939 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1
+11 03 2022 - 22:14:17.939 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+11 03 2022 - 22:14:18.811 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+11 03 2022 - 22:14:43.375 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - GET request received for /clients/hyd
+11 03 2022 - 22:14:43.376 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer to get the client with id: hyd
+11 03 2022 - 22:14:43.376 [JettyServerThreadPool-23] WARN  com.revature.service.ClientService - Service layer - the client id: hyd is invalid
+11 03 2022 - 22:14:43.376 [JettyServerThreadPool-23] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Id provided is invalid: hyd
+11 03 2022 - 22:15:31.244 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - GET request received for /clients/1000
+11 03 2022 - 22:15:31.244 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1000
+11 03 2022 - 22:15:32.108 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - the client with id: 1000 doesn't exist
+11 03 2022 - 22:15:32.108 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1000 doesn't exist

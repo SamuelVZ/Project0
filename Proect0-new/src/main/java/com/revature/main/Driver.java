@@ -5,14 +5,25 @@ import com.revature.controller.ExceptionController;
 import com.revature.controller.TestController;
 import com.revature.controller.Controller;
 import io.javalin.Javalin;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
 
+
 public class Driver {
+
+    //TODO 40: create a logger using the slf4j library
+    public static Logger logger = LoggerFactory.getLogger(Driver.class);
 
     public static void main(String[] args) throws SQLException {
         //TODO 28: create an instance of javalin
         Javalin app = Javalin.create();
+
+        //TODO 41: to log before every request
+        app.before((ctx) -> {
+                logger.info(ctx.method() + " request received for " + ctx.path());
+        });
 
         mapControllers (app, new TestController(), new ClientController(), new ExceptionController());
 
