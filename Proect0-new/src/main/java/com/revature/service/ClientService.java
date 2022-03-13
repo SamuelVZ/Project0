@@ -2,7 +2,6 @@ package com.revature.service;
 
 import com.revature.dao.ClientDao;
 import com.revature.exceptions.ClientNotFoundException;
-import com.revature.main.Driver;
 import com.revature.model.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -56,4 +55,64 @@ public class ClientService {
             throw new IllegalArgumentException("Id provided is invalid: " + id);
         }
     }
+
+    public Client addClient(Client client) throws SQLException {
+        logger.info("Service layer - add the client" + client);
+
+        validateClientInfo(client);
+
+        Client addedClient = clientDao.addClient(client);
+        return addedClient;
+    }
+
+    public Client updateClient(String id, Client clientToUpdate) throws SQLException, ClientNotFoundException {
+        logger.info("Service layer to update the client with id: " + id);
+
+        try {
+            int clientId = Integer.parseInt(id);
+            Client checkClient = clientDao.getClientById(clientId);
+
+            if (checkClient == null){
+                logger.warn("Service layer - The client attempted to be updated with the id: " + id + " doesn't exist");
+                throw new ClientNotFoundException("The client attempted to be updated with the id: " + id + " doesn't exist");
+            }
+
+            validateClientInfo(clientToUpdate);
+
+            clientToUpdate.setId(clientId);
+
+            Client clientUpdated = clientDao.updateClient(clientToUpdate);
+            logger.info("Service layer - Successful return of the client with id: " + id);
+            return clientUpdated;
+
+
+        }catch (NumberFormatException e) {
+            logger.warn("Service layer - the client id: " + id + " is invalid");
+            throw new IllegalArgumentException("Id provided is invalid: " + id);
+        }
+
+
+    }
+
+    private void validateClientInfo(Client client){
+
+        client.setFirstName(client.getFirstName().trim());
+        client.setLastName(client.getLastName().trim());
+        client.setPhoneNumber(client.getPhoneNumber().trim());
+
+        if(!client.getFirstName().matches("[a-zA-z]+") || !client.getLastName().matches("[a-zA-z]+")){
+            logger.warn("Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: " +
+                    client.getFirstName() + " Lastname: " + client.getLastName());
+            throw new IllegalArgumentException("First and last names need to only have alphabet letters. Firstname: "+ client.getFirstName() + " Lastname: " + client.getLastName());
+        }
+        if(!client.getPhoneNumber().matches("\\d+")){
+            logger.warn("Service layer - The phone number provided have values different than numbers. Phone number: " + client.getPhoneNumber());
+            throw new IllegalArgumentException("Phone number need to have only numbers. Phone number: " + client.getPhoneNumber());
+        }
+
+        if(client.getAge() < 0){
+            throw new IllegalArgumentException("A client with age < 0 is not valid");
+        }
+    }
+
 }

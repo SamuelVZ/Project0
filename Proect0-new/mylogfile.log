@@ -76,3 +76,344 @@
 11 03 2022 - 22:15:31.244 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1000
 11 03 2022 - 22:15:32.108 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - the client with id: 1000 doesn't exist
 11 03 2022 - 22:15:32.108 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1000 doesn't exist
+12 03 2022 - 18:55:55.912 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 18:55:55.920 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @260ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 18:55:55.921 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 18:55:55.933 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 18:55:55.933 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 18:55:56.153 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 18:55:56.153 [main] INFO  io.javalin.Javalin - Javalin started in 233ms \o/
+12 03 2022 - 18:56:10.264 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1
+12 03 2022 - 18:56:10.265 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+12 03 2022 - 18:56:11.491 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+12 03 2022 - 18:57:04.732 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 18:57:16.849 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 18:57:33.090 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 18:57:33.097 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @267ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 18:57:33.098 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 18:57:33.110 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 18:57:33.110 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 18:57:33.344 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 18:57:33.344 [main] INFO  io.javalin.Javalin - Javalin started in 247ms \o/
+12 03 2022 - 18:58:31.309 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 18:58:31.317 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @258ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 18:58:31.317 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 18:58:31.329 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 18:58:31.329 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 18:58:31.542 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 18:58:31.542 [main] INFO  io.javalin.Javalin - Javalin started in 225ms \o/
+12 03 2022 - 18:58:39.272 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:05:48.806 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:05:48.813 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @279ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:05:48.814 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:05:48.826 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:05:48.826 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:05:49.033 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:05:49.033 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+12 03 2022 - 19:07:00.033 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:07:00.152 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='Add', age=55, phoneNumber='8523697414'}
+12 03 2022 - 19:08:03.693 [JettyServerThreadPool-17] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:08:03.694 [JettyServerThreadPool-17] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client2', lastName='Add', age=55, phoneNumber='8523697414'}
+12 03 2022 - 19:29:06.903 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:29:06.911 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @267ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:29:06.912 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:29:06.924 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:29:06.924 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:29:07.130 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:29:07.131 [main] INFO  io.javalin.Javalin - Javalin started in 220ms \o/
+12 03 2022 - 19:29:39.035 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:29:39.158 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client3', lastName='Add123', age=55, phoneNumber='8523697414'}
+12 03 2022 - 19:29:39.159 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client to be added have a firstname or lastname with no alphabet letters: Client3 Add123
+12 03 2022 - 19:29:39.159 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: First and last names need to only have alphabet letters. Client names: Client3 Add123
+12 03 2022 - 19:31:48.441 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:31:48.449 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @266ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:31:48.449 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:31:48.461 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:31:48.461 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:31:48.668 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:31:48.668 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+12 03 2022 - 19:31:56.891 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:31:57.018 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client3', lastName='Add123', age=55, phoneNumber='8523697414'}
+12 03 2022 - 19:31:57.018 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client to be added have a firstname or lastname with no alphabet letters. Firstname: Client3 Lastname: Add123
+12 03 2022 - 19:31:57.019 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: First and last names need to only have alphabet letters. Firstname: Client3 Lastname: Add123
+12 03 2022 - 19:32:40.915 [JettyServerThreadPool-18] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:32:40.915 [JettyServerThreadPool-18] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadd', age=55, phoneNumber='phone'}
+12 03 2022 - 19:32:40.915 [JettyServerThreadPool-18] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: phone
+12 03 2022 - 19:32:40.915 [JettyServerThreadPool-18] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: phone
+12 03 2022 - 19:33:09.712 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:33:09.712 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadd', age=55, phoneNumber=''}
+12 03 2022 - 19:33:09.713 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 
+12 03 2022 - 19:33:09.713 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 
+12 03 2022 - 19:33:39.100 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:33:39.100 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadd', age=55, phoneNumber='null'}
+12 03 2022 - 19:33:39.103 [JettyServerThreadPool-26] WARN  io.javalin.Javalin - Uncaught exception
+java.lang.NullPointerException: null
+	at com.revature.service.ClientService.addClient(ClientService.java:64)
+	at com.revature.controller.ClientController.lambda$new$2(ClientController.java:41)
+	at io.javalin.core.security.SecurityUtil.noopAccessManager(SecurityUtil.kt:20)
+	at io.javalin.http.JavalinServlet.addHandler$lambda-5(JavalinServlet.kt:115)
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:44)
+	at io.javalin.http.JavalinServlet$service$tryBeforeAndEndpointHandlers$1.invoke(JavalinServlet.kt:39)
+	at io.javalin.http.JavalinServlet.service$tryWithExceptionMapper(JavalinServlet.kt:131)
+	at io.javalin.http.JavalinServlet.service$tryBeforeAndEndpointHandlers(JavalinServlet.kt:39)
+	at io.javalin.http.JavalinServlet.service(JavalinServlet.kt:87)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at io.javalin.jetty.JavalinJettyServlet.service(JavalinJettyServlet.kt:58)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at io.javalin.jetty.JettyServer$start$wsAndHttpHandler$1.doHandle(JettyServer.kt:52)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:179)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:750)
+12 03 2022 - 19:40:39.826 [JettyServerThreadPool-13] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:40:39.827 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadd', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:40:39.827 [JettyServerThreadPool-13] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 7894561236
+12 03 2022 - 19:40:39.827 [JettyServerThreadPool-13] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 7894561236
+12 03 2022 - 19:42:47.019 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:42:47.020 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadded', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:42:47.020 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 7894561236
+12 03 2022 - 19:42:47.020 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 7894561236
+12 03 2022 - 19:42:48.466 [JettyServerThreadPool-28] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:42:48.466 [JettyServerThreadPool-28] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadded', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:42:48.466 [JettyServerThreadPool-28] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 7894561236
+12 03 2022 - 19:42:48.466 [JettyServerThreadPool-28] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 7894561236
+12 03 2022 - 19:45:29.703 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:45:29.711 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @262ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:45:29.712 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:45:29.724 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:45:29.724 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:45:29.926 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:45:29.927 [main] INFO  io.javalin.Javalin - Javalin started in 215ms \o/
+12 03 2022 - 19:45:37.635 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:45:37.752 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadded', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:45:37.753 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 7894561236
+12 03 2022 - 19:45:37.753 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 7894561236
+12 03 2022 - 19:45:42.296 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:45:42.296 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadded', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:45:42.296 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: 7894561236
+12 03 2022 - 19:45:42.296 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Phone number need to have only numbers. Phone number: 7894561236
+12 03 2022 - 19:46:04.365 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:46:04.373 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @279ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:46:04.374 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:46:04.386 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:46:04.387 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:46:04.593 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:46:04.593 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+12 03 2022 - 19:46:15.868 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:46:15.876 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @279ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:46:15.877 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:46:15.889 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:46:15.889 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:46:16.102 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:46:16.102 [main] INFO  io.javalin.Javalin - Javalin started in 226ms \o/
+12 03 2022 - 19:46:21.426 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:46:21.550 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='thirdadded', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:52:34.415 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 19:52:34.425 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @323ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 19:52:34.426 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 19:52:34.439 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 19:52:34.439 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 19:52:34.646 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 19:52:34.646 [main] INFO  io.javalin.Javalin - Javalin started in 221ms \o/
+12 03 2022 - 19:52:42.113 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:52:42.244 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Client', lastName='added', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:53:37.214 [JettyServerThreadPool-13] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:53:37.215 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='addedtwo  ', age=55, phoneNumber='7894561236'}
+12 03 2022 - 19:54:10.186 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 19:54:10.186 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='addedtwo  ', age=55, phoneNumber='7894561236'}
+12 03 2022 - 20:18:56.995 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 20:18:57.003 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @263ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 20:18:57.004 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 20:18:57.016 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 20:18:57.016 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 20:18:57.231 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 20:18:57.231 [main] INFO  io.javalin.Javalin - Javalin started in 228ms \o/
+12 03 2022 - 20:19:04.543 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1
+12 03 2022 - 20:19:04.543 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+12 03 2022 - 20:19:05.685 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+12 03 2022 - 20:19:46.046 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - PUT request received for /clients/1
+12 03 2022 - 20:19:46.067 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+12 03 2022 - 20:19:46.943 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+12 03 2022 - 20:20:16.022 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - PUT request received for /clients/10000
+12 03 2022 - 20:20:16.022 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer to update the client with id: 10000
+12 03 2022 - 20:20:16.871 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 10000
+12 03 2022 - 20:21:11.744 [JettyServerThreadPool-13] INFO  com.revature.main.Driver - PUT request received for /clients/1
+12 03 2022 - 20:21:11.745 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+12 03 2022 - 20:21:12.596 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+12 03 2022 - 20:21:43.596 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - PUT request received for /clients/1000
+12 03 2022 - 20:21:43.596 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1000
+12 03 2022 - 20:21:44.453 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1000
+12 03 2022 - 20:23:55.614 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 20:23:55.622 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @290ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 20:23:55.623 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 20:23:55.635 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 20:23:55.635 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 20:23:55.856 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 20:23:55.857 [main] INFO  io.javalin.Javalin - Javalin started in 235ms \o/
+12 03 2022 - 20:24:12.551 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - PUT request received for /clients/1
+12 03 2022 - 20:24:12.669 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+12 03 2022 - 20:24:13.772 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+12 03 2022 - 20:24:29.576 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - PUT request received for /clients/5000
+12 03 2022 - 20:24:29.576 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer to update the client with id: 5000
+12 03 2022 - 20:24:30.414 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 5000
+12 03 2022 - 20:29:14.634 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 20:29:14.643 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @282ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 20:29:14.644 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 20:29:14.659 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 20:29:14.659 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 20:29:14.898 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 20:29:14.898 [main] INFO  io.javalin.Javalin - Javalin started in 254ms \o/
+12 03 2022 - 20:29:21.570 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - PUT request received for /clients/5000
+12 03 2022 - 20:29:21.694 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer to update the client with id: 5000
+12 03 2022 - 20:29:22.810 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 5000 doesn't exist
+12 03 2022 - 20:29:22.811 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client attempted to be updated with the id: 5000 doesn't exist
+12 03 2022 - 20:45:16.406 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+12 03 2022 - 20:45:16.414 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @290ms to org.eclipse.jetty.util.log.Slf4jLog
+12 03 2022 - 20:45:16.415 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+12 03 2022 - 20:45:16.428 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+12 03 2022 - 20:45:16.428 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+12 03 2022 - 20:45:16.635 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+12 03 2022 - 20:45:16.635 [main] INFO  io.javalin.Javalin - Javalin started in 220ms \o/
+12 03 2022 - 20:45:33.315 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 20:45:33.442 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Clien2  ', lastName='addedtwo  ', age=55, phoneNumber='7894561236'}
+12 03 2022 - 20:45:33.442 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Clien2 Lastname: addedtwo
+12 03 2022 - 20:45:33.442 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: First and last names need to only have alphabet letters. Firstname: Clien2 Lastname: addedtwo
+12 03 2022 - 20:45:39.999 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - POST request received for /clients
+12 03 2022 - 20:45:39.999 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='addedtwo  ', age=55, phoneNumber='7894561236'}

@@ -35,18 +35,30 @@ public class ClientController implements Controller{
             ctx.json(client);
     };
 
-    private Handler updateClient = (ctx) -> {
+    private Handler addClient = (ctx) -> {
+        Client clientToAdd = ctx.bodyAsClass(Client.class);
 
+        Client addedClient = clientService.addClient(clientToAdd);
+        ctx.status(201); //Created
+        ctx.json(addedClient);
     };
 
+    private Handler updateClient = (ctx -> {
+        String id = ctx.pathParam("clientId");
+        Client clientToUpdate = ctx.bodyAsClass(Client.class);
+
+        Client clientUpdated = clientService.updateClient(id, clientToUpdate);
+        ctx.status(200);
+        ctx.json(clientUpdated);
+    });
 
 
     @Override
     public void mapEndPoints(Javalin app) {
         app.get("/clients", getAllClients);
         app.get("/clients/{clientId}", getClientById); //{}you are going to save the content inside the brackets
-        //app.post("/clients/{clientId}", updateClient);
-
+        app.post("/clients", addClient);
+        app.put("/clients/{clientId}", updateClient);
 
     }
 }
