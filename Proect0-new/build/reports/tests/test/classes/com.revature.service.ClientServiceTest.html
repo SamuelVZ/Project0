@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">5</div>
+<div class="counter">15</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.266s</div>
+<div class="counter">0.320s</div>
 <p>duration</p>
 </div>
 </td>
@@ -63,6 +63,9 @@
 <li>
 <a href="#tab0">Tests</a>
 </li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
 </ul>
 <div id="tab0" class="tab">
 <h2>Tests</h2>
@@ -75,13 +78,38 @@
 </tr>
 </thead>
 <tr>
+<td class="success">testAddClient_AgeLowerThan_zero()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddClient_NoLettersCharactersOnFirst_And_Lastname()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddClient_NoNumbersOn_Phone_number()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddClient_Trim_positive()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddClient_positive()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testGetAllClients()</td>
-<td class="success">0.011s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetStudentById()</td>
-<td class="success">0.002s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -91,7 +119,7 @@
 </tr>
 <tr>
 <td class="success">testGetStudentById_incorrectId()</td>
-<td class="success">0.250s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,7 +127,63 @@
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
+<tr>
+<td class="success">testUpdateClient_AgeLowerThan_zero()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateClient_NoLettersCharactersOnFirst_And_Lastname()</td>
+<td class="success">0.309s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateClient_NoNumbersOn_Phone_number()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateClient_Trim_positive()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdateClient_positive()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>13 03 2022 - 17:29:19.548 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.550 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.555 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.555 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.556 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 17:29:19.556 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 17:29:19.557 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 17:29:19.557 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 17:29:19.558 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 17:29:19.562 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.565 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 17:29:19.566 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.567 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 17:29:19.568 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.569 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.569 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 17:29:19.570 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 17:29:19.570 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 17:29:19.571 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -109,7 +193,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at Mar 11, 2022 2:36:53 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at Mar 13, 2022 5:29:19 PM</p>
 </div>
 </div>
 </body>

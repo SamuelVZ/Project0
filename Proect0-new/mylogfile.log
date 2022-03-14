@@ -417,3 +417,119 @@ java.lang.NullPointerException: null
 12 03 2022 - 20:45:33.442 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: First and last names need to only have alphabet letters. Firstname: Clien2 Lastname: addedtwo
 12 03 2022 - 20:45:39.999 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - POST request received for /clients
 12 03 2022 - 20:45:39.999 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='addedtwo  ', age=55, phoneNumber='7894561236'}
+13 03 2022 - 14:48:03.015 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+13 03 2022 - 14:48:03.024 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @270ms to org.eclipse.jetty.util.log.Slf4jLog
+13 03 2022 - 14:48:03.025 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+13 03 2022 - 14:48:03.037 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+13 03 2022 - 14:48:03.037 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+13 03 2022 - 14:48:03.243 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+13 03 2022 - 14:48:03.243 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+13 03 2022 - 14:50:04.179 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - PUT request received for /clients/5000
+13 03 2022 - 14:50:04.317 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer to update the client with id: 5000
+13 03 2022 - 14:50:05.506 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 5000 doesn't exist
+13 03 2022 - 14:50:05.507 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client attempted to be updated with the id: 5000 doesn't exist
+13 03 2022 - 14:50:19.440 [JettyServerThreadPool-13] INFO  com.revature.main.Driver - PUT request received for /clients/1
+13 03 2022 - 14:50:19.441 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 14:50:21.162 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 16:00:21.355 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 16:00:27.593 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 16:00:27.595 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 16:00:27.607 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 16:00:27.611 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 16:00:27.612 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 16:00:27.614 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 16:00:27.615 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 16:00:27.616 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 16:00:27.617 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 16:10:09.352 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 16:11:41.816 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 16:11:41.818 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname:   test   Lastname:   client  
+13 03 2022 - 16:12:51.234 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 16:13:38.392 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 16:13:38.394 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname:   test   Lastname:   client  
+13 03 2022 - 16:27:10.151 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 16:27:10.152 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 16:30:06.978 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 16:30:06.979 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 16:31:19.165 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+13 03 2022 - 16:34:26.665 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 16:34:26.667 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 16:34:26.673 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 16:34:26.673 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 16:34:26.674 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 16:34:26.674 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 16:34:26.684 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 16:34:26.687 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 16:34:26.688 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 16:34:26.688 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 16:34:26.690 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 16:34:26.691 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 16:34:26.692 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 16:34:26.692 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 16:34:26.693 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+13 03 2022 - 17:00:25.359 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:00:25.361 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 1 doesn't exist
+13 03 2022 - 17:07:29.664 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:07:29.666 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 1 doesn't exist
+13 03 2022 - 17:09:27.474 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:09:27.476 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 1 doesn't exist
+13 03 2022 - 17:13:18.421 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:13:18.426 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:14:39.761 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:14:39.763 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:14:39.770 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 17:14:39.770 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 17:14:39.772 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 17:14:39.772 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 17:14:39.782 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 17:14:39.786 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 17:14:39.787 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:14:39.787 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:14:39.788 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 17:14:39.788 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:14:39.790 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 17:14:39.792 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 17:14:39.792 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 17:14:39.793 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 17:14:39.794 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+13 03 2022 - 17:19:30.299 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:19:30.303 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:23:34.577 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:23:34.579 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:25:09.327 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:25:09.329 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:27:27.844 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:27:27.845 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.548 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.550 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.555 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.555 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.556 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 17:29:19.556 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 17:29:19.557 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 17:29:19.557 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 17:29:19.558 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 17:29:19.562 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.565 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 17:29:19.566 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.567 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 17:29:19.568 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.569 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.569 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 17:29:19.570 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 17:29:19.570 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 17:29:19.571 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}

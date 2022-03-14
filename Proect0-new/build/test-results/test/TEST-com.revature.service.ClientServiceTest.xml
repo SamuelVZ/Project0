@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.revature.service.ClientServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-03-11T22:36:53" hostname="DESKTOP-RVLR18L" time="0.266">
+<testsuite name="com.revature.service.ClientServiceTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-03-14T00:29:19" hostname="DESKTOP-RVLR18L" time="0.327">
   <properties/>
-  <testcase name="testGetStudentById_incorrectId()" classname="com.revature.service.ClientServiceTest" time="0.25"/>
-  <testcase name="testGetAllClients()" classname="com.revature.service.ClientServiceTest" time="0.011"/>
-  <testcase name="testGetStudentById()" classname="com.revature.service.ClientServiceTest" time="0.002"/>
+  <testcase name="testUpdateClient_NoLettersCharactersOnFirst_And_Lastname()" classname="com.revature.service.ClientServiceTest" time="0.309"/>
+  <testcase name="testAddClient_NoLettersCharactersOnFirst_And_Lastname()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
+  <testcase name="testGetStudentById_incorrectId()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
+  <testcase name="testAddClient_NoNumbersOn_Phone_number()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
+  <testcase name="testAddClient_Trim_positive()" classname="com.revature.service.ClientServiceTest" time="0.004"/>
+  <testcase name="testGetAllClients()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
+  <testcase name="testUpdateClient_Trim_positive()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
+  <testcase name="testUpdateClient_positive()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
+  <testcase name="testUpdateClient_AgeLowerThan_zero()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
+  <testcase name="testGetStudentById()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
   <testcase name="testGetStudentById_SQLException()" classname="com.revature.service.ClientServiceTest" time="0.002"/>
+  <testcase name="testUpdateClient_NoNumbersOn_Phone_number()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
+  <testcase name="testAddClient_positive()" classname="com.revature.service.ClientServiceTest" time="0.0"/>
   <testcase name="testGetStudentById_notExistentId()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testAddClient_AgeLowerThan_zero()" classname="com.revature.service.ClientServiceTest" time="0.001"/>
+  <system-out><![CDATA[13 03 2022 - 17:29:19.548 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.550 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.555 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+13 03 2022 - 17:29:19.555 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+13 03 2022 - 17:29:19.556 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+13 03 2022 - 17:29:19.556 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+13 03 2022 - 17:29:19.557 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+13 03 2022 - 17:29:19.557 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+13 03 2022 - 17:29:19.558 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+13 03 2022 - 17:29:19.562 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.563 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+13 03 2022 - 17:29:19.564 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.565 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.565 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+13 03 2022 - 17:29:19.566 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+13 03 2022 - 17:29:19.567 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+13 03 2022 - 17:29:19.568 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+13 03 2022 - 17:29:19.569 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+13 03 2022 - 17:29:19.569 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+13 03 2022 - 17:29:19.570 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+13 03 2022 - 17:29:19.570 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+13 03 2022 - 17:29:19.571 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
