@@ -1,9 +1,6 @@
 package com.revature.main;
 
-import com.revature.controller.ClientController;
-import com.revature.controller.ExceptionController;
-import com.revature.controller.TestController;
-import com.revature.controller.Controller;
+import com.revature.controller.*;
 import com.revature.dao.ClientAccountDao;
 import com.revature.model.ClientAccount;
 import io.javalin.Javalin;
@@ -29,7 +26,7 @@ public class Driver {
                 logger.info(ctx.method() + " request received for " + ctx.path());
         });
 
-        mapControllers (app, new TestController(), new ClientController(), new ExceptionController());
+        mapControllers (app, new TestController(), new ClientController(), new ExceptionController(), new ClientAccountController());
 
         app.start();
 
