@@ -94,6 +94,36 @@ public class ClientService {
 
     }
 
+
+    public boolean deleteClientById(String id) throws ClientNotFoundException, SQLException {
+        logger.info("Service layer - delete the client with id: " + id);
+        try {
+            int clientId = Integer.parseInt(id);
+            Client c = clientDao.getClientById(clientId);
+
+            if (c == null){
+                logger.warn("Service layer - the client with id: " + id + " doesn't exist");
+                throw new ClientNotFoundException("The client with the id " + id + " doesn't exist");
+            }
+
+
+            boolean d = clientDao.deleteClientById(clientId);
+            if (d == false){
+                logger.warn("Service layer - No records deleted of the client with id: " + id);
+                throw new ClientNotFoundException("The client with the id " + id + " doesn't exist");
+            }
+
+            logger.info("Service layer - Successful delete of the client with id: " + id);
+            return true;
+
+        }catch (NumberFormatException e) {
+            logger.warn("Service layer - the client id: " + id + " is invalid");
+            throw new IllegalArgumentException("Id provided is invalid: " + id);
+        }
+    }
+
+
+
     private void validateClientInfo(Client client){
 
         client.setFirstName(client.getFirstName().trim());
@@ -114,5 +144,6 @@ public class ClientService {
             throw new IllegalArgumentException("A client with age < 0 is not valid");
         }
     }
+
 
 }

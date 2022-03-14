@@ -294,4 +294,24 @@ public class ClientServiceTest {
         });
     }
 
+    @Test
+    public  void testDeleteClientById() throws SQLException, ClientNotFoundException {
+        //Arrange
+        ClientDao mockClient = mock(ClientDao.class);
+
+        Client fakeClient = new Client(1,"test", "client", 44, "1478523699");
+
+        when(mockClient.getClientById(eq(1))).thenReturn(fakeClient);
+        when(mockClient.deleteClientById(eq(1))).thenReturn(true);
+
+        ClientService clientService = new ClientService(mockClient);
+
+        //Act
+        boolean actual = clientService.deleteClientById("1");
+
+        //Assert
+        Assertions.assertEquals(true, actual);
+
+    }
+
 }

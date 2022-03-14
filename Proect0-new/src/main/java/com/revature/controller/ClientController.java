@@ -23,6 +23,7 @@ public class ClientController implements Controller{
         //TODO 30: create the method to return all clients on the service class
         List<Client> clients = clientService.getAllClients();
 
+        ctx.status(200);
         ctx.json(clients);
     };
     //TODO 32: create the method to return a client by ID (don't convert from String to int here, because the controller layer only needs to capture the path string)
@@ -30,9 +31,9 @@ public class ClientController implements Controller{
 
         //pathParam to get the String inside the brackets
         String clientId = ctx.pathParam("clientId");
-
-            Client client = clientService.getClientByID(clientId);
-            ctx.json(client);
+        ctx.status(200);
+        Client client = clientService.getClientByID(clientId);
+        ctx.json(client);
     };
 
     private Handler addClient = (ctx) -> {
@@ -43,15 +44,22 @@ public class ClientController implements Controller{
         ctx.json(addedClient);
     };
 
-    private Handler updateClient = (ctx -> {
+    private Handler updateClient = (ctx) -> {
         String id = ctx.pathParam("clientId");
         Client clientToUpdate = ctx.bodyAsClass(Client.class);
 
         Client clientUpdated = clientService.updateClient(id, clientToUpdate);
         ctx.status(200);
         ctx.json(clientUpdated);
-    });
+    };
 
+    private Handler deleteClientById = (ctx) -> {
+        String id = ctx.pathParam("clientId");
+
+        boolean client = clientService.deleteClientById(id);
+        ctx.status(410); //deleted
+        ctx.result("Client: " + id + " deleted");
+    };
 
     @Override
     public void mapEndPoints(Javalin app) {
@@ -59,6 +67,7 @@ public class ClientController implements Controller{
         app.get("/clients/{clientId}", getClientById); //{}you are going to save the content inside the brackets
         app.post("/clients", addClient);
         app.put("/clients/{clientId}", updateClient);
+        app.delete("/clients/{clientId}", deleteClientById);
 
     }
 }
