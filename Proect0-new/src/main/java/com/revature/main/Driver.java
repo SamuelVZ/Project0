@@ -4,6 +4,8 @@ import com.revature.controller.ClientController;
 import com.revature.controller.ExceptionController;
 import com.revature.controller.TestController;
 import com.revature.controller.Controller;
+import com.revature.dao.ClientAccountDao;
+import com.revature.model.ClientAccount;
 import io.javalin.Javalin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +19,8 @@ public class Driver {
     public static Logger logger = LoggerFactory.getLogger(Driver.class);
 
     public static void main(String[] args) throws SQLException {
+
+
         //TODO 28: create an instance of javalin
         Javalin app = Javalin.create();
 
@@ -28,6 +32,9 @@ public class Driver {
         mapControllers (app, new TestController(), new ClientController(), new ExceptionController());
 
         app.start();
+
+
+
 
 
         //TODO 23: test the dao layer
@@ -43,6 +50,26 @@ public class Driver {
 
         System.out.println(clientDao.addClient(new Client(0,"newNew", "added", 22,"3692581477")));
         System.out.println(clientDao.getAllClients());
+
+
+
+
+        ClientAccountDao clientAccountDao = new ClientAccountDao();
+        System.out.println(clientAccountDao.addClientAccount(new ClientAccount(4,2,200)));
+
+        ClientAccountDao clientAccountDao = new ClientAccountDao();
+        System.out.println(clientAccountDao.getClientAccountById(1,5));
+
+        ClientAccountDao clientAccountDao = new ClientAccountDao();
+        System.out.println(clientAccountDao.getAllClientAccountsByClientId(1));
+
+        ClientAccountDao clientAccountDao = new ClientAccountDao();
+        System.out.println(clientAccountDao.updateClientAccounts(new ClientAccount(1,1,5)));
+
+        ClientAccountDao clientAccountDao = new ClientAccountDao();
+        System.out.println(clientAccountDao.getAllClientAccountsByClientId(1));
+        System.out.println(clientAccountDao.deleteClientAccountById(1,1));
+        System.out.println(clientAccountDao.getAllClientAccountsByClientId(1));
 
         */
     }
