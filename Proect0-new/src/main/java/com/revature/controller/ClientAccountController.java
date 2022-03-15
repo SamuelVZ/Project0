@@ -21,8 +21,13 @@ public class ClientAccountController implements Controller{
     private Handler getAllClientAccounts = (ctx) ->{
 
         String clientId = ctx.pathParam("client_id");
+        String qLess = ctx.queryParam("amountLessThan");
+        String qGreater = ctx.queryParam("amountGreaterThan");
 
-        List<ClientAccount> clientAccounts = clientAccountService.getAllClientAccounts(clientId);
+
+
+
+        List<ClientAccount> clientAccounts = clientAccountService.getAllClientAccounts(clientId, qLess, qGreater);
 
         ctx.status(200);
         ctx.json(clientAccounts);

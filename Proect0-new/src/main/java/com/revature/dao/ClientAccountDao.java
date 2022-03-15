@@ -38,15 +38,15 @@ public class ClientAccountDao {
 
         try (Connection con = ConnectionUtility.getConnection()){
 
-            String sql = "SELECT * FROM clients_accounts WHERE client_id = ? AND account_id = ?";
+            //String sql = "SELECT * FROM clients_accounts WHERE client_id = ? AND account_id = ?";
 
-//            String sql2 = "SELECT ca.client_id, c.first_name, c.last_name, ca.account_id, a.account_name, ca.balance " +
-//                    "FROM clients_accounts ca " +
-//                    "LEFT JOIN clients c ON ca.client_id = c.id " +
-//                    "LEFT JOIN accounts a ON ca.account_id = a.id " +
-//                    "WHERE ca.client_id = ? AND account_id = ?";
+            String sql2 = "SELECT ca.client_id, c.first_name, c.last_name, ca.account_id, a.account_name, ca.balance " +
+                    "FROM clients_accounts ca " +
+                    "JOIN clients c ON ca.client_id = c.id " +
+                    "JOIN accounts a ON ca.account_id = a.id " +
+                    "WHERE ca.client_id = ? AND account_id = ?";
 
-            PreparedStatement pstmt = con.prepareStatement(sql);
+            PreparedStatement pstmt = con.prepareStatement(sql2);
 
             pstmt.setInt(1, clientId);
             pstmt.setInt(2, accountId);
@@ -55,11 +55,15 @@ public class ClientAccountDao {
 
             if(rs.next()){
                 int rClientId = rs.getInt("client_id");
+                String firstName = rs.getString("first_name");
+                String lastName = rs.getString("last_name");
                 int rAccountId = rs.getInt("account_id");
+                String accountName = rs.getString("account_name");
                 int balance = rs.getInt("balance");
 
 
-                return new ClientAccount(rClientId, rAccountId, balance);
+                //return new ClientAccount(rClientId, rAccountId, balance);
+                return new ClientAccount(rClientId, firstName, lastName, rAccountId, accountName, balance);
             }
         }
         //TODO 14: return null if no results
@@ -74,10 +78,16 @@ public class ClientAccountDao {
 
         try (Connection con = ConnectionUtility.getConnection()){
 
-            String sql = "SELECT * FROM clients_accounts WHERE client_id = ?";
+           // String sql = "SELECT * FROM clients_accounts WHERE client_id = ?";
+
+            String sql2 = "SELECT ca.client_id, c.first_name, c.last_name, ca.account_id, a.account_name, ca.balance " +
+                    "FROM clients_accounts ca " +
+                    "JOIN clients c ON ca.client_id = c.id " +
+                    "JOIN accounts a ON ca.account_id = a.id " +
+                    "WHERE ca.client_id = ?";
 
 
-            PreparedStatement pstmt = con.prepareStatement(sql);
+            PreparedStatement pstmt = con.prepareStatement(sql2);
 
             pstmt.setInt(1, clientId);
 
@@ -85,9 +95,12 @@ public class ClientAccountDao {
 
             while (rs.next()){
                 int rClientId = rs.getInt("client_id");
+                String firstName = rs.getString("first_name");
+                String lastName = rs.getString("last_name");
                 int rAccountId = rs.getInt("account_id");
+                String accountName = rs.getString("account_name");
                 int balance = rs.getInt("balance");
-                clientAccounts.add(new ClientAccount(rClientId, rAccountId, balance));
+                clientAccounts.add(new ClientAccount(rClientId, firstName, lastName, rAccountId, accountName, balance));
             }
         }
         return clientAccounts;
@@ -157,5 +170,45 @@ public class ClientAccountDao {
         return null;
     }
 
+        public List<ClientAccount> getClientAccountByIdLessGreater(int clientId, int lessThan, int greaterThan) throws SQLException {
+
+            List<ClientAccount> clientAccounts = new ArrayList<>();
+
+            try (Connection con = ConnectionUtility.getConnection()){
+
+                /*String sql = "SELECT * FROM clients_accounts WHERE client_id = ? " +
+                        "AND balance < ? " +
+                        "AND balance > ?";
+                */
+
+                String sql2 = "SELECT ca.client_id, c.first_name, c.last_name, ca.account_id, a.account_name, ca.balance " +
+                        "FROM clients_accounts ca " +
+                        "JOIN clients c ON ca.client_id = c.id " +
+                        "JOIN accounts a ON ca.account_id = a.id " +
+                        "WHERE ca.client_id = ? " +
+                        "AND balance < ? " +
+                        "AND balance > ?";
+
+
+                PreparedStatement pstmt = con.prepareStatement(sql2);
+
+                pstmt.setInt(1, clientId);
+                pstmt.setInt(2, lessThan);
+                pstmt.setInt(3, greaterThan);
+
+                ResultSet rs = pstmt.executeQuery();
+
+                while (rs.next()){
+                    int rClientId = rs.getInt("client_id");
+                    String firstName = rs.getString("first_name");
+                    String lastName = rs.getString("last_name");
+                    int rAccountId = rs.getInt("account_id");
+                    String accountName = rs.getString("account_name");
+                    int balance = rs.getInt("balance");
+                    clientAccounts.add(new ClientAccount(rClientId, firstName, lastName, rAccountId, accountName, balance));
+                }
+            }
+            return clientAccounts;
+        }
 
 }

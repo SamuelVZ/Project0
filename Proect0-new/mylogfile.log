@@ -2708,3 +2708,667 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 14 03 2022 - 23:11:15.768 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - DELETE request received for /clients/20/accounts/1
 14 03 2022 - 23:11:16.636 [JettyServerThreadPool-26] WARN  com.revature.service.ClientService - Service layer - the client with id: 20 doesn't exist
 14 03 2022 - 23:11:16.636 [JettyServerThreadPool-26] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 20 doesn't exist
+15 03 2022 - 10:16:52.393 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:16:52.401 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @290ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:16:52.402 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:16:52.415 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:16:52.415 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:16:52.635 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:16:52.635 [main] INFO  io.javalin.Javalin - Javalin started in 233ms \o/
+15 03 2022 - 10:18:31.758 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:18:31.759 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:18:37.705 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - GET request received for /clients/10/accounts
+15 03 2022 - 10:18:37.705 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 10
+15 03 2022 - 10:18:38.572 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - the client with id: 10 doesn't exist
+15 03 2022 - 10:18:38.572 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 10 doesn't exist
+15 03 2022 - 10:18:44.390 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/5/accounts
+15 03 2022 - 10:18:44.391 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 5
+15 03 2022 - 10:18:46.129 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - the client with id: 5 doesn't have accounts
+15 03 2022 - 10:18:46.129 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 5 doesn't have accounts
+15 03 2022 - 10:18:50.855 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:18:50.856 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:25:58.282 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:25:58.289 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @273ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:25:58.290 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:25:58.303 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:25:58.303 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:25:58.550 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:25:58.550 [main] INFO  io.javalin.Javalin - Javalin started in 260ms \o/
+15 03 2022 - 10:26:44.172 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:26:44.262 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:27:13.947 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:27:13.956 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @268ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:27:13.956 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:27:13.969 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:27:13.969 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:27:14.190 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:27:14.190 [main] INFO  io.javalin.Javalin - Javalin started in 234ms \o/
+15 03 2022 - 10:27:21.030 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:27:21.118 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:28:34.614 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:28:34.622 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @292ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:28:34.623 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:28:34.635 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:28:34.635 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:28:34.841 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:28:34.841 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+15 03 2022 - 10:28:39.094 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:28:39.184 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:30:49.782 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:30:49.790 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @298ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:30:49.791 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:30:49.804 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:30:49.804 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:30:50.013 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:30:50.013 [main] INFO  io.javalin.Javalin - Javalin started in 222ms \o/
+15 03 2022 - 10:31:05.658 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:31:05.666 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @284ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:31:05.667 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:31:05.679 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:31:05.679 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:31:05.884 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:31:05.884 [main] INFO  io.javalin.Javalin - Javalin started in 217ms \o/
+15 03 2022 - 10:31:20.097 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:31:20.186 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:33:12.002 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:33:12.010 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @288ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:33:12.011 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:33:12.025 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:33:12.025 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:33:12.237 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:33:12.237 [main] INFO  io.javalin.Javalin - Javalin started in 227ms \o/
+15 03 2022 - 10:33:19.749 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:33:19.750 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 10:46:00.007 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 10:46:00.016 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @276ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 10:46:00.017 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 10:46:00.031 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 10:46:00.031 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 10:46:00.246 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 10:46:00.246 [main] INFO  io.javalin.Javalin - Javalin started in 229ms \o/
+15 03 2022 - 10:46:13.175 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 10:46:13.176 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 11:10:00.647 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 11:10:00.656 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @295ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 11:10:00.657 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 11:10:00.674 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 11:10:00.674 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 11:10:00.897 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 11:10:00.898 [main] INFO  io.javalin.Javalin - Javalin started in 242ms \o/
+15 03 2022 - 11:10:06.188 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 11:10:06.189 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 11:10:08.202 [JettyServerThreadPool-26] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 11:10:08.202 [JettyServerThreadPool-26] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 11:11:14.125 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 11:11:14.133 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @286ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 11:11:14.134 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 11:11:14.152 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 11:11:14.152 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 11:11:14.370 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 11:11:14.370 [main] INFO  io.javalin.Javalin - Javalin started in 236ms \o/
+15 03 2022 - 11:11:18.709 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 11:11:18.709 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 11:11:20.691 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 11:11:20.692 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 12:52:26.303 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 12:52:26.311 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @272ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 12:52:26.311 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 12:52:26.324 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 12:52:26.324 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 12:52:26.454 [main] ERROR io.javalin.Javalin - Failed to start Javalin
+15 03 2022 - 12:52:26.455 [main] INFO  io.javalin.Javalin - Stopping Javalin ...
+15 03 2022 - 12:52:26.460 [main] INFO  io.javalin.Javalin - Javalin has stopped
+15 03 2022 - 12:52:54.619 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 12:52:54.626 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @267ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 12:52:54.627 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 12:52:54.640 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 12:52:54.640 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 12:52:54.862 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 12:52:54.862 [main] INFO  io.javalin.Javalin - Javalin started in 236ms \o/
+15 03 2022 - 12:53:02.429 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 12:53:02.429 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 12:53:08.156 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 12:53:08.156 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 12:53:09.876 [JettyServerThreadPool-15] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 12:53:09.876 [JettyServerThreadPool-15] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 12:55:13.837 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 12:55:13.844 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @314ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 12:55:13.845 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 12:55:13.857 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 12:55:13.857 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 12:55:14.065 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 12:55:14.066 [main] INFO  io.javalin.Javalin - Javalin started in 221ms \o/
+15 03 2022 - 12:55:23.437 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 12:55:23.438 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 12:55:25.407 [JettyServerThreadPool-26] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 12:55:25.407 [JettyServerThreadPool-26] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: Service layer - the client with id: 1 doesn't have accounts that meet the criteria: less than: 2000 and greater than: 400
+15 03 2022 - 12:59:54.492 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 12:59:54.500 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @267ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 12:59:54.501 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 12:59:54.513 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 12:59:54.514 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 12:59:54.722 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 12:59:54.722 [main] INFO  io.javalin.Javalin - Javalin started in 222ms \o/
+15 03 2022 - 12:59:59.727 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 12:59:59.728 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 13:00:12.091 [JettyServerThreadPool-13] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 13:00:12.091 [JettyServerThreadPool-13] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 13:00:24.765 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 13:00:24.765 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 13:01:43.469 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 13:01:43.470 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 13:47:04.444 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 13:47:04.452 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @283ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 13:47:04.453 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 13:47:04.465 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 13:47:04.465 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 13:47:04.678 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 13:47:04.678 [main] INFO  io.javalin.Javalin - Javalin started in 226ms \o/
+15 03 2022 - 13:47:17.774 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - DELETE request received for /clients/1
+15 03 2022 - 13:47:17.775 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 13:47:19.823 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 13:54:34.623 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 13:54:34.633 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @314ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 13:54:34.634 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 13:54:34.648 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 13:54:34.648 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 13:54:34.899 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 13:54:34.900 [main] INFO  io.javalin.Javalin - Javalin started in 267ms \o/
+15 03 2022 - 13:54:49.201 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 13:54:49.202 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 13:54:50.373 [JettyServerThreadPool-26] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 13:54:50.374 [JettyServerThreadPool-26] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1 doesn't exist
+15 03 2022 - 13:55:10.127 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 13:55:10.127 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:03:20.080 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:03:20.083 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:03:20.090 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 14:03:20.093 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 14:03:20.095 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:03:20.095 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:03:20.096 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 14:03:20.096 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 14:03:20.097 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 14:03:20.097 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 14:03:20.098 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 14:03:20.098 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 14:03:20.099 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:03:20.100 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:03:20.100 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:03:20.100 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:03:20.101 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:03:20.101 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:03:20.102 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 14:03:20.102 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:03:20.104 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 14:03:20.105 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:03:20.105 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:03:20.107 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 14:03:20.109 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 14:03:20.109 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 14:03:20.110 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 14:23:56.769 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:23:56.774 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:23:56.783 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 14:23:56.788 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 14:23:56.791 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:23:56.791 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:23:56.793 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 14:23:56.793 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 14:23:56.795 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 14:23:56.795 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 14:23:56.796 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 14:23:56.798 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 14:23:56.800 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:23:56.800 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:23:56.802 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:23:56.802 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:23:56.804 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:23:56.804 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:23:56.806 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 14:23:56.806 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:23:56.809 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 14:23:56.811 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:23:56.811 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:23:56.812 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 14:23:56.815 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 14:23:56.815 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 14:23:56.817 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 14:24:04.505 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:24:04.508 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:24:04.514 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 14:24:04.516 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 14:24:04.518 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 14:24:04.518 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 14:24:04.519 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 14:24:04.519 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 14:24:04.520 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 14:24:04.520 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 14:24:04.521 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 14:24:04.522 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 14:24:04.523 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:24:04.523 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:24:04.524 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 14:24:04.524 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:24:04.525 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:24:04.526 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:24:04.526 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 14:24:04.527 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 14:24:04.528 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 14:24:04.530 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 14:24:04.530 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 14:24:04.531 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 14:24:04.532 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 14:24:04.532 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 14:24:04.533 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 14:24:12.720 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 14:24:12.729 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @276ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 14:24:12.729 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 14:24:12.741 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 14:24:12.742 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 14:24:12.953 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 14:24:12.953 [main] INFO  io.javalin.Javalin - Javalin started in 224ms \o/
+15 03 2022 - 14:24:18.541 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 14:24:18.541 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:39:49.967 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 14:39:49.977 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @306ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 14:39:49.978 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 14:39:49.998 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 14:39:49.998 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 14:39:50.216 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 14:39:50.216 [main] INFO  io.javalin.Javalin - Javalin started in 238ms \o/
+15 03 2022 - 14:40:12.557 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 14:40:12.558 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 14:41:45.842 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 14:41:45.843 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:43:52.268 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 14:43:52.268 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:43:59.552 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 14:43:59.552 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 14:50:42.204 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 14:50:42.212 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @278ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 14:50:42.213 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 14:50:42.226 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 14:50:42.227 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 14:50:42.452 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 14:50:42.452 [main] INFO  io.javalin.Javalin - Javalin started in 239ms \o/
+15 03 2022 - 14:51:16.686 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 14:51:16.687 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:52:09.855 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 14:52:09.862 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @279ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 14:52:09.863 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 14:52:09.876 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 14:52:09.876 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 14:52:10.103 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 14:52:10.103 [main] INFO  io.javalin.Javalin - Javalin started in 240ms \o/
+15 03 2022 - 14:52:14.778 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 14:52:14.779 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 14:57:53.629 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 14:57:53.637 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @278ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 14:57:53.638 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 14:57:53.652 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 14:57:53.652 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 14:57:53.883 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 14:57:53.883 [main] INFO  io.javalin.Javalin - Javalin started in 246ms \o/
+15 03 2022 - 14:58:15.742 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 15:10:42.958 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 15:10:42.966 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @273ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 15:10:42.967 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 15:10:42.980 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 15:10:42.980 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 15:10:43.186 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 15:10:43.186 [main] INFO  io.javalin.Javalin - Javalin started in 219ms \o/
+15 03 2022 - 15:10:51.174 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 15:11:09.684 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 15:11:31.834 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:11:31.834 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:11:55.284 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:11:55.284 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:12:01.851 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/5/accounts
+15 03 2022 - 15:12:01.851 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 5
+15 03 2022 - 15:12:03.549 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client with id: 5 doesn't have accounts
+15 03 2022 - 15:12:03.550 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 5 doesn't have accounts
+15 03 2022 - 15:12:11.356 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 15:12:11.356 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 15:12:36.996 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 15:12:36.996 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 15:12:46.865 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:12:46.865 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:19:12.049 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 15:19:12.057 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @266ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 15:19:12.057 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 15:19:12.070 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 15:19:12.070 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 15:19:12.272 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 15:19:12.272 [main] INFO  io.javalin.Javalin - Javalin started in 215ms \o/
+15 03 2022 - 15:19:18.940 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:19:18.940 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:20:00.006 [JettyServerThreadPool-18] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/10
+15 03 2022 - 15:20:00.007 [JettyServerThreadPool-18] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 15:20:02.578 [JettyServerThreadPool-18] WARN  com.revature.service.ClientService - Service layer - the account with id: 10 doesn't exist
+15 03 2022 - 15:20:02.580 [JettyServerThreadPool-18] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 10 doesn't exist
+15 03 2022 - 15:20:10.291 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/abc
+15 03 2022 - 15:20:10.291 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 15:20:12.030 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 15:20:12.030 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Account Id provided is invalid: abc
+15 03 2022 - 15:20:18.494 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:20:18.516 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:25:14.515 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 15:25:14.523 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @262ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 15:25:14.524 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 15:25:14.536 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 15:25:14.536 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 15:25:14.739 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 15:25:14.739 [main] INFO  io.javalin.Javalin - Javalin started in 216ms \o/
+15 03 2022 - 15:26:20.489 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:26:20.611 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:27:07.202 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:27:07.202 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=20, accountName='null', balance=555}
+15 03 2022 - 15:27:09.816 [JettyServerThreadPool-15] WARN  com.revature.service.ClientService - Service layer - the account with id: 20 doesn't exist
+15 03 2022 - 15:27:09.817 [JettyServerThreadPool-15] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 20 doesn't exist
+15 03 2022 - 15:27:18.971 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - POST request received for /clients/abc/accounts
+15 03 2022 - 15:27:18.971 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - add to the client abc the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:27:18.971 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 15:27:18.971 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 15:28:21.789 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 15:29:50.532 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/100
+15 03 2022 - 15:29:53.149 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 15:29:53.150 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 100 doesn't exist
+15 03 2022 - 15:29:57.754 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - PUT request received for /clients/abc/accounts/abc
+15 03 2022 - 15:29:57.754 [JettyServerThreadPool-15] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 15:29:57.754 [JettyServerThreadPool-15] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 15:30:08.187 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - DELETE request received for /clients/1/accounts/1
+15 03 2022 - 15:30:11.638 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client 1 with account id: 1
+15 03 2022 - 15:30:40.414 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - DELETE request received for /clients/20/accounts/1
+15 03 2022 - 15:30:41.270 [JettyServerThreadPool-15] WARN  com.revature.service.ClientService - Service layer - the client with id: 20 doesn't exist
+15 03 2022 - 15:30:41.270 [JettyServerThreadPool-15] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 20 doesn't exist
+15 03 2022 - 15:30:55.582 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - DELETE request received for /clients/abc/accounts/abc
+15 03 2022 - 15:30:55.582 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 15:30:55.582 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 15:31:16.552 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:31:16.552 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:49:44.857 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 15:49:44.865 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @271ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 15:49:44.866 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 15:49:44.878 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 15:49:44.878 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 15:49:45.079 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 15:49:45.079 [main] INFO  io.javalin.Javalin - Javalin started in 214ms \o/
+15 03 2022 - 15:49:53.470 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients
+15 03 2022 - 15:49:53.471 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 15:50:03.395 [JettyServerThreadPool-15] INFO  com.revature.main.Driver - GET request received for /clients/1
+15 03 2022 - 15:50:03.395 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 15:50:04.267 [JettyServerThreadPool-15] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 15:50:23.909 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - GET request received for /clients/1000
+15 03 2022 - 15:50:23.909 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1000
+15 03 2022 - 15:50:24.766 [JettyServerThreadPool-23] WARN  com.revature.service.ClientService - Service layer - the client with id: 1000 doesn't exist
+15 03 2022 - 15:50:24.766 [JettyServerThreadPool-23] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1000 doesn't exist
+15 03 2022 - 15:50:30.207 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - GET request received for /clients/hyd
+15 03 2022 - 15:50:30.207 [JettyServerThreadPool-19] INFO  com.revature.service.ClientService - Service layer to get the client with id: hyd
+15 03 2022 - 15:50:30.207 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - the client id: hyd is invalid
+15 03 2022 - 15:50:30.207 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Id provided is invalid: hyd
+15 03 2022 - 15:50:51.437 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - POST request received for /clients
+15 03 2022 - 15:50:51.457 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='added  ', age=55, phoneNumber='7894561236'}
+15 03 2022 - 15:51:31.561 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - PUT request received for /clients/1
+15 03 2022 - 15:51:31.562 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 15:51:33.261 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 15:52:10.862 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - PUT request received for /clients/100
+15 03 2022 - 15:52:10.862 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer to update the client with id: 100
+15 03 2022 - 15:52:11.732 [JettyServerThreadPool-12] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 100 doesn't exist
+15 03 2022 - 15:52:11.732 [JettyServerThreadPool-12] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client attempted to be updated with the id: 100 doesn't exist
+15 03 2022 - 15:52:19.402 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - DELETE request received for /clients/1
+15 03 2022 - 15:52:19.403 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 15:52:21.151 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 15:52:34.858 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:52:34.858 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:52:35.728 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 15:52:35.728 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1 doesn't exist
+15 03 2022 - 15:52:53.156 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:52:53.156 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:53:12.610 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/5/accounts
+15 03 2022 - 15:53:12.610 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 5
+15 03 2022 - 15:53:14.297 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - the client with id: 5 doesn't have accounts
+15 03 2022 - 15:53:14.297 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 5 doesn't have accounts
+15 03 2022 - 15:53:23.288 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 15:53:23.289 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 15:53:34.648 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 15:53:34.648 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 15:53:58.198 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/10
+15 03 2022 - 15:53:58.198 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 15:54:00.754 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - the account with id: 10 doesn't exist
+15 03 2022 - 15:54:00.754 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 10 doesn't exist
+15 03 2022 - 15:54:04.874 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/abc
+15 03 2022 - 15:54:04.874 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 15:54:06.605 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 15:54:06.605 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Account Id provided is invalid: abc
+15 03 2022 - 15:54:15.062 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:54:15.063 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:55:20.152 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:55:20.153 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:55:46.856 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:55:46.856 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=20, accountName='null', balance=555}
+15 03 2022 - 15:55:49.485 [JettyServerThreadPool-12] WARN  com.revature.service.ClientService - Service layer - the account with id: 20 doesn't exist
+15 03 2022 - 15:55:49.485 [JettyServerThreadPool-12] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 20 doesn't exist
+15 03 2022 - 15:55:59.706 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - POST request received for /clients/abc/accounts
+15 03 2022 - 15:55:59.707 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - add to the client abc the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:55:59.707 [JettyServerThreadPool-23] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 15:55:59.707 [JettyServerThreadPool-23] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 15:56:07.114 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 15:56:07.115 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 15:56:10.573 [JettyServerThreadPool-12] WARN  com.revature.service.ClientService - Service layer - the client 4 have already the account 2
+15 03 2022 - 15:56:10.573 [JettyServerThreadPool-12] WARN  c.r.controller.ExceptionController - The account attempted to add was found. Exception message: The client with the id 4 have already the account 2
+15 03 2022 - 15:56:51.427 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 15:57:18.856 [JettyServerThreadPool-19] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/100
+15 03 2022 - 15:57:21.402 [JettyServerThreadPool-19] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 15:57:21.402 [JettyServerThreadPool-19] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 100 doesn't exist
+15 03 2022 - 15:57:53.231 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - DELETE request received for /clients/1/accounts/1
+15 03 2022 - 15:57:56.644 [JettyServerThreadPool-14] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client 1 with account id: 1
+15 03 2022 - 15:58:12.185 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - DELETE request received for /clients/20/accounts/1
+15 03 2022 - 15:58:13.031 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client with id: 20 doesn't exist
+15 03 2022 - 15:58:13.031 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 20 doesn't exist
+15 03 2022 - 15:58:33.490 [JettyServerThreadPool-14] INFO  com.revature.main.Driver - DELETE request received for /clients/20/accounts/1
+15 03 2022 - 15:58:34.365 [JettyServerThreadPool-14] WARN  com.revature.service.ClientService - Service layer - the client with id: 20 doesn't exist
+15 03 2022 - 15:58:34.365 [JettyServerThreadPool-14] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 20 doesn't exist
+15 03 2022 - 15:58:46.816 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - DELETE request received for /clients/abc/accounts/abc
+15 03 2022 - 15:58:46.817 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 15:58:46.817 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc

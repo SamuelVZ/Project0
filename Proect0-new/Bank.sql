@@ -84,11 +84,19 @@ from clients_accounts;
 
 
 
+
 /*
+ 
+SELECT * 
+FROM clients_accounts 
+WHERE client_id = 1
+and balance > 400 
+and balance <2000; 
+ 
 SELECT ca.client_id, c.first_name, c.last_name, ca.account_id, a.account_name, ca.balance  
 FROM clients_accounts ca
-LEFT JOIN clients c ON ca.client_id = c.id 
-LEFT JOIN accounts a ON ca.account_id = a.id 
+JOIN clients c ON ca.client_id = c.id 
+JOIN accounts a ON ca.account_id = a.id 
 WHERE ca.client_id = 1;
 
 UPDATE clients_accounts

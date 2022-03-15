@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ClientAccountService {
@@ -34,31 +35,55 @@ public class ClientAccountService {
     }
 
 
-    public List<ClientAccount> getAllClientAccounts(String clientId) throws SQLException, ClientNotFoundException {
+    public List<ClientAccount> getAllClientAccounts(String clientId, String less, String greater) throws SQLException, ClientNotFoundException {
         logger.info("Service layer - get all the accounts of the client " + clientId);
 
-        try {
-        int id = Integer.parseInt(clientId);
-        Client c = clientDao.getClientById(id);
 
-        if (c == null){
-            logger.warn("Service layer - the client with id: " + clientId + " doesn't exist");
-            throw new ClientNotFoundException("The client with the id " + clientId + " doesn't exist");
-        }
+            try {
+                int id = Integer.parseInt(clientId);
+                Client c = clientDao.getClientById(id);
 
-        List<ClientAccount> a = clientAccountDao.getAllClientAccountsByClientId(id);
-            if(a.isEmpty()){
-                logger.warn("Service layer - the client with id: " + clientId + " doesn't have accounts");
-                throw new ClientNotFoundException("The client with the id " + clientId + " doesn't have accounts");
+                if (c == null) {
+                    logger.warn("Service layer - the client with id: " + clientId + " doesn't exist");
+                    throw new ClientNotFoundException("The client with the id " + clientId + " doesn't exist");
+                }
+
+                if(less == null && greater == null) {
+                    List<ClientAccount> a = clientAccountDao.getAllClientAccountsByClientId(id);
+                    if (a.isEmpty()) {
+                        logger.warn("Service layer - the client with id: " + clientId + " doesn't have accounts");
+                        throw new ClientNotFoundException("The client with the id " + clientId + " doesn't have accounts");
+                    }
+
+                    return a;
+
+                }else if(less != null && greater != null) {
+
+                    try {
+                        int qLess = Integer.parseInt(less);
+                        int qGreater = Integer.parseInt(greater);
+
+                        List<ClientAccount> a = clientAccountDao.getClientAccountByIdLessGreater(id, qLess, qGreater);
+
+                        if (a.isEmpty()) {
+                            logger.warn("Service layer - the client with id: " + clientId + " doesn't have accounts that " +
+                                    "meet the criteria: less than: " + less + " and greater than: " + greater);
+                            throw new ClientNotFoundException("Service layer - the client with id: " + clientId + " doesn't have accounts that " +
+                                    "meet the criteria: less than: " + less + " and greater than: " + greater);
+                        }
+                        return a;
+
+                    } catch (NumberFormatException e) {
+                        logger.warn("Service layer - the query have invalid values: less than: " + less + " greater than: " + greater);
+                        throw new IllegalArgumentException("Id provided is invalid: " + clientId);
+                    }
+
+                }
+            } catch (NumberFormatException e) {
+                logger.warn("Service layer - the client id: " + clientId + " is invalid");
+                throw new IllegalArgumentException("Id provided is invalid: " + clientId);
             }
-
-        return a;
-
-
-        }catch (NumberFormatException e) {
-            logger.warn("Service layer - the client id: " + clientId + " is invalid");
-            throw new IllegalArgumentException("Id provided is invalid: " + clientId);
-        }
+            return null;
     }
 
     public ClientAccount getClientAccountById(String clientId, String accountId) throws SQLException, ClientNotFoundException, ClientAccountNotFoundException, AccountNotFoundException {
@@ -148,7 +173,13 @@ public class ClientAccountService {
             validateClientAccountInfo(clientAccountToAdd);
 
             ClientAccount addedClientAccount = clientAccountDao.addClientAccount(clientAccountToAdd);
-            return addedClientAccount;
+            ClientAccount fullUpdatedClientAccount = clientAccountDao.getClientAccountById(addedClientAccount.getClient_id(), addedClientAccount.getAccount_id());
+
+
+            return fullUpdatedClientAccount;
+            //return addedClientAccount;
+
+
         }catch (NumberFormatException e) {
             logger.warn("Service layer - the client id: " + clientId + " is invalid");
             throw new IllegalArgumentException("the client id provided is invalid: " + clientId);
@@ -196,7 +227,9 @@ public class ClientAccountService {
 
                 ClientAccount updatedClientAccount = clientAccountDao.updateClientAccounts(clientAccountToUpdate);
 
-                return updatedClientAccount;
+                ClientAccount fullUpdatedClientAccount = clientAccountDao.getClientAccountById(updatedClientAccount.getClient_id(), updatedClientAccount.getAccount_id());
+                return fullUpdatedClientAccount;
+                //return updatedClientAccount;
 
             }catch (NumberFormatException e) {
                 logger.warn("Service layer - the account id: " + accountId + " is invalid");
