@@ -35,7 +35,8 @@ VALUES
 ('Samuelgcp', 'Valencia', 24, 4567898547),
 ('Hugo', 'Licon', 18, 65147856954),
 ('Perla', 'Soriano', 25, 9832652642),
-('Bach', 'Tran', 25, 4781238477);
+('Bach', 'Tran', 25, 4781238477),
+('Daniel', 'Land', 18, 7894561236);
 
 INSERT INTO accounts (account_name, account_description) 
 VALUES 

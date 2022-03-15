@@ -1,7 +1,9 @@
 package com.revature.controller;
 
+import com.revature.exceptions.AccountNotFoundException;
+import com.revature.exceptions.ClientAccountFoundException;
+import com.revature.exceptions.ClientAccountNotFoundException;
 import com.revature.exceptions.ClientNotFoundException;
-import com.revature.service.ClientService;
 import io.javalin.Javalin;
 import io.javalin.http.ExceptionHandler;
 import org.slf4j.Logger;
@@ -29,10 +31,33 @@ public class ExceptionController implements Controller{
         ctx.json(e.getMessage());
     };
 
+    private ExceptionHandler clientAccountNotFound = (e, ctx) ->{
+        logger.warn("The client account attempted to be retrieve was not found. Exception message: " + e.getMessage());
+        ctx.status(404); //code 404 for not found resources
+        ctx.json(e.getMessage());
+    };
+
+    private ExceptionHandler accountNotFound = (e, ctx) ->{
+        logger.warn("The account attempted to be retrieve was not found. Exception message: " + e.getMessage());
+        ctx.status(404); //code 404 for not found resources
+        ctx.json(e.getMessage());
+    };
+
+    private ExceptionHandler accountFound = (e, ctx) ->{
+        logger.warn("The account attempted to add was found. Exception message: " + e.getMessage());
+        ctx.status(404); //code 404 for not found resources
+        ctx.json(e.getMessage());
+    };
+
+
     @Override
     public void mapEndPoints(Javalin app) {
 
         app.exception(ClientNotFoundException.class, clientNotFound);
+        app.exception(ClientAccountNotFoundException.class, clientAccountNotFound);
+        app.exception(AccountNotFoundException.class, accountNotFound);
+        app.exception(ClientAccountFoundException.class, accountFound);
         app.exception(IllegalArgumentException.class, clientIdInvalid);
+
     }
 }

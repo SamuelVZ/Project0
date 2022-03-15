@@ -1,5 +1,6 @@
 package com.revature.dao;
 
+import com.revature.model.Account;
 import com.revature.model.Client;
 import com.revature.model.ClientAccount;
 import com.revature.utility.ConnectionUtility;
@@ -133,5 +134,28 @@ public class ClientAccountDao {
         }
         return false;
     }
+
+    public Account getAccountById(int id) throws SQLException {
+        try (Connection con = ConnectionUtility.getConnection()){
+
+
+            String sql = "SELECT * FROM accounts WHERE id = ?";
+
+            PreparedStatement pstmt = con.prepareStatement(sql);
+
+            pstmt.setInt(1, id);
+
+            ResultSet rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                String accountName = rs.getString("account_name");
+                String accountDescription = rs.getString("account_description");
+
+                return new Account(id, accountName,accountDescription);
+            }
+        }
+        return null;
+    }
+
 
 }

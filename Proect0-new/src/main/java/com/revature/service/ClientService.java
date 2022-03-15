@@ -143,6 +143,7 @@ public class ClientService {
         if(client.getAge() < 0){
             throw new IllegalArgumentException("A client with age < 0 is not valid");
         }
+
     }
 
 
