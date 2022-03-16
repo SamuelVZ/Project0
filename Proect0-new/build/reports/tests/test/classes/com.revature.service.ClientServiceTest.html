@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">16</div>
+<div class="counter">18</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.369s</div>
+<div class="counter">0.325s</div>
 <p>duration</p>
 </div>
 </td>
@@ -84,27 +84,37 @@
 </tr>
 <tr>
 <td class="success">testAddClient_NoLettersCharactersOnFirst_And_Lastname()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testAddClient_NoNumbersOn_Phone_number()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testAddClient_Trim_positive()</td>
 <td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">testAddClient_NoNumbersOn_Phone_number()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testAddClient_Trim_positive()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">testAddClient_positive()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteClientById_NonExistentId()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDeleteClientById_invalidId()</td>
 <td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">testDeleteClientById()</td>
-<td class="success">0.004s</td>
+<td class="success">testDeleteClientById_positive()</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -114,7 +124,7 @@
 </tr>
 <tr>
 <td class="success">testGetStudentById()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -124,22 +134,22 @@
 </tr>
 <tr>
 <td class="success">testGetStudentById_incorrectId()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testGetStudentById_notExistentId()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateClient_AgeLowerThan_zero()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">testUpdateClient_NoLettersCharactersOnFirst_And_Lastname()</td>
-<td class="success">0.352s</td>
+<td class="success">0.315s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,7 +164,7 @@
 </tr>
 <tr>
 <td class="success">testUpdateClient_positive()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -162,33 +172,37 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>15 03 2022 - 14:24:04.505 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
-15 03 2022 - 14:24:04.508 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
-15 03 2022 - 14:24:04.514 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
-15 03 2022 - 14:24:04.516 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
-15 03 2022 - 14:24:04.518 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
-15 03 2022 - 14:24:04.518 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
-15 03 2022 - 14:24:04.519 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
-15 03 2022 - 14:24:04.519 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
-15 03 2022 - 14:24:04.520 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
-15 03 2022 - 14:24:04.520 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
-15 03 2022 - 14:24:04.521 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
-15 03 2022 - 14:24:04.522 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
-15 03 2022 - 14:24:04.523 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
-15 03 2022 - 14:24:04.523 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
-15 03 2022 - 14:24:04.524 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
-15 03 2022 - 14:24:04.524 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
-15 03 2022 - 14:24:04.525 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
-15 03 2022 - 14:24:04.526 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
-15 03 2022 - 14:24:04.526 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
-15 03 2022 - 14:24:04.527 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
-15 03 2022 - 14:24:04.528 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
-15 03 2022 - 14:24:04.530 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
-15 03 2022 - 14:24:04.530 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
-15 03 2022 - 14:24:04.531 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
-15 03 2022 - 14:24:04.532 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
-15 03 2022 - 14:24:04.532 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
-15 03 2022 - 14:24:04.533 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+<pre>15 03 2022 - 22:33:36.375 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 22:33:36.377 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 22:33:36.382 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 22:33:36.382 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 22:33:36.383 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 22:33:36.383 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 22:33:36.384 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 22:33:36.384 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 22:33:36.385 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 22:33:36.388 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: aaa
+15 03 2022 - 22:33:36.389 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 22:33:36.390 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 22:33:36.390 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.392 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 22:33:36.392 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 22:33:36.393 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 22:33:36.393 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.395 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 22:33:36.396 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 22:33:36.396 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 22:33:36.396 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 22:33:36.397 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 22:33:36.398 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 22:33:36.398 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 22:33:36.399 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 22:33:36.400 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 22:33:36.400 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 22:33:36.401 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
 </pre>
 </span>
 </div>
@@ -200,7 +214,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at Mar 15, 2022 2:24:04 PM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at Mar 15, 2022 10:33:36 PM</p>
 </div>
 </div>
 </body>

@@ -295,7 +295,7 @@ public class ClientServiceTest {
     }
 
     @Test
-    public  void testDeleteClientById() throws SQLException, ClientNotFoundException {
+    public  void testDeleteClientById_positive() throws SQLException, ClientNotFoundException {
         //Arrange
         ClientDao mockClient = mock(ClientDao.class);
 
@@ -314,4 +314,32 @@ public class ClientServiceTest {
 
     }
 
+    @Test
+    public  void testDeleteClientById_NonExistentId() throws SQLException {
+        //Arrange
+        ClientDao mockClient = mock(ClientDao.class);
+
+        when(mockClient.getClientById(eq(100))).thenReturn(null);
+
+        ClientService clientService = new ClientService(mockClient);
+
+        //Act + Assert
+        Assertions.assertThrows(ClientNotFoundException.class, () -> {
+            clientService.deleteClientById("100");
+        });
+    }
+
+    @Test
+    public  void testDeleteClientById_invalidId() throws SQLException {
+        //Arrange
+        ClientDao mockClient = mock(ClientDao.class);
+
+        ClientService clientService = new ClientService(mockClient);
+
+        //Act + Assert
+        //we use assertThrows when we want to see if an exception were thrown
+        Assertions.assertThrows(IllegalArgumentException.class, () ->{
+            clientService.deleteClientById("aaa");
+        });
+    }
 }

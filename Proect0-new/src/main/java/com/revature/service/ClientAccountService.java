@@ -30,8 +30,9 @@ public class ClientAccountService {
     }
 
     //for testing
-    public ClientAccountService(ClientAccountDao mockAccountDao) {
+    public ClientAccountService(ClientAccountDao mockAccountDao, ClientDao clientDao) {
         this.clientAccountDao = mockAccountDao;
+        this.clientDao = clientDao;
     }
 
 

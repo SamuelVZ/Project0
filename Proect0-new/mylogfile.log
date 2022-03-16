@@ -3372,3 +3372,318 @@ org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique co
 15 03 2022 - 15:58:46.816 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - DELETE request received for /clients/abc/accounts/abc
 15 03 2022 - 15:58:46.817 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
 15 03 2022 - 15:58:46.817 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 18:01:27.201 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 18:01:27.206 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:02:15.600 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 18:02:15.604 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:05:04.301 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 18:05:04.304 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:05:09.959 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 18:05:09.962 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:09:27.020 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: abc
+15 03 2022 - 18:09:27.022 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 18:10:28.748 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1abc
+15 03 2022 - 18:10:28.749 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: 1abc is invalid
+15 03 2022 - 18:11:26.594 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: aaa
+15 03 2022 - 18:11:26.595 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 18:17:58.031 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 18:17:58.034 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 18:17:58.039 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 18:17:58.039 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 18:17:58.040 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 18:17:58.040 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 18:17:58.041 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 18:17:58.041 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 18:17:58.042 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 18:17:58.046 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: aaa
+15 03 2022 - 18:17:58.046 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 18:17:58.047 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 18:17:58.049 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 18:17:58.049 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 18:17:58.050 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 18:17:58.050 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 18:17:58.051 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 18:17:58.052 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 18:17:58.053 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 18:17:58.053 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 18:17:58.056 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 18:17:58.057 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 18:17:58.057 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 18:17:58.058 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 18:17:58.059 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 18:17:58.059 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:17:58.060 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 18:17:58.061 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 18:17:58.062 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 18:17:58.063 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 18:17:58.063 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 18:57:06.044 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:03:47.430 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:03:54.323 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:10:53.692 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client abc
+15 03 2022 - 19:10:53.693 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 19:13:18.704 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 100
+15 03 2022 - 19:13:18.707 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 19:18:44.892 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:18:44.903 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 100
+15 03 2022 - 19:18:44.903 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 19:18:44.904 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 100
+15 03 2022 - 19:18:44.905 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 19:18:44.906 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:19:54.285 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client abc
+15 03 2022 - 19:19:54.286 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 19:22:16.029 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:22:16.033 [Test worker] WARN  com.revature.service.ClientService - Service layer - the query have invalid values: less than: abc greater than: abc
+15 03 2022 - 19:23:19.537 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:23:19.542 [Test worker] WARN  com.revature.service.ClientService - Service layer - the query have invalid values: less than: abc greater than: abc
+15 03 2022 - 19:23:19.549 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:23:19.551 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client abc
+15 03 2022 - 19:23:19.552 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 19:23:19.553 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 100
+15 03 2022 - 19:23:19.553 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 19:23:19.555 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 19:38:01.024 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 19:38:01.028 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client: 1 doesn't have the account: 1
+15 03 2022 - 19:46:17.346 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 19:49:50.100 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 100
+15 03 2022 - 19:49:50.104 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 19:54:09.107 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 19:54:09.109 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 20:00:57.442 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 20:00:57.444 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 20:03:33.281 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 20:03:33.283 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 20:03:55.165 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 20:03:55.167 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 20:05:52.977 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 20:05:52.980 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 20:07:34.738 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 20:07:34.742 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts
+15 03 2022 - 20:07:58.244 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 20:07:58.247 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 20:10:56.610 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 20:10:56.614 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client: 1 doesn't have the account: 1
+15 03 2022 - 20:13:44.325 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client abc
+15 03 2022 - 20:13:44.327 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 20:14:13.759 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client abc
+15 03 2022 - 20:14:13.761 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 20:14:32.674 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client abc
+15 03 2022 - 20:14:32.675 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 20:16:03.393 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 20:16:03.397 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 20:16:04.878 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 20:16:04.881 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 20:42:38.157 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=200}
+15 03 2022 - 20:42:38.161 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client 1 have already the account 1
+15 03 2022 - 20:43:54.120 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=4, accountName='savings', balance=200}
+15 03 2022 - 20:43:54.124 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 4 doesn't exist
+15 03 2022 - 20:44:54.178 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=4, accountName='savings', balance=200}
+15 03 2022 - 20:44:54.182 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 4 doesn't exist
+15 03 2022 - 20:45:36.150 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=200}
+15 03 2022 - 20:45:36.154 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client 1 have already the account 1
+15 03 2022 - 20:46:45.596 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=200}
+15 03 2022 - 20:51:46.253 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=200}
+15 03 2022 - 20:51:46.257 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client 1 have already the account 1
+15 03 2022 - 21:06:29.638 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=500}
+15 03 2022 - 21:06:29.641 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client 1 have already the account 1
+15 03 2022 - 21:06:59.533 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=2, accountName='savings', balance=500}
+15 03 2022 - 21:06:59.535 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 2 doesn't exist
+15 03 2022 - 21:07:43.395 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='samuel', lastName='valencia', account_id=1, accountName='savings', balance=500}
+15 03 2022 - 21:07:43.398 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client 1 have already the account 1
+15 03 2022 - 21:17:32.557 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client abc the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=2, accountName='null', balance=40}
+15 03 2022 - 21:17:32.558 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 21:20:07.461 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=2, accountName='null', balance=40}
+15 03 2022 - 21:20:07.464 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:25:46.885 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=2, accountName='null', balance=40}
+15 03 2022 - 21:36:45.848 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 21:36:45.851 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:39:10.374 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 21:39:10.376 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:42:58.348 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 100 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 21:44:08.374 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=100, accountName='null', balance=9}
+15 03 2022 - 21:44:08.376 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:44:49.039 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 21:44:49.041 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:44:57.279 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 21:44:57.281 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 21:45:38.448 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=1, accountName='null', balance=9}
+15 03 2022 - 21:45:38.451 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:08:49.013 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=1, accountName='null', balance=9}
+15 03 2022 - 22:08:49.015 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:14:15.072 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:14:53.834 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:16:02.271 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:17:35.296 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:18:26.947 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:19:27.768 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:22:21.882 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:22:34.891 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:23:26.243 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:24:33.822 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:24:49.375 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:27:20.376 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts
+15 03 2022 - 22:28:17.504 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts
+15 03 2022 - 22:30:13.166 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:30:22.669 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:30:34.299 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:31:30.797 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts
+15 03 2022 - 22:31:47.437 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 22:31:47.440 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 22:32:15.056 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 22:33:15.248 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 22:33:15.256 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.257 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 22:33:15.257 [Test worker] WARN  com.revature.service.ClientService - Service layer - the query have invalid values: less than: abc greater than: abc
+15 03 2022 - 22:33:15.258 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 22:33:15.260 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:33:15.261 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.262 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=1, accountName='null', balance=9}
+15 03 2022 - 22:33:15.263 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.264 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 22:33:15.265 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 100 for the client 1
+15 03 2022 - 22:33:15.265 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 22:33:15.266 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:33:15.267 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client abc
+15 03 2022 - 22:33:15.267 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:33:15.268 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client abc
+15 03 2022 - 22:33:15.268 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:33:15.269 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=0, accountName='null', balance=0}
+15 03 2022 - 22:33:15.269 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.270 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't have accounts
+15 03 2022 - 22:33:15.271 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:33:15.272 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client 1 the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=2, accountName='null', balance=40}
+15 03 2022 - 22:33:15.272 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.273 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 22:33:15.274 [Test worker] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:33:15.275 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 100
+15 03 2022 - 22:33:15.275 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 22:33:15.276 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 22:33:15.276 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.277 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 100
+15 03 2022 - 22:33:15.277 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 22:33:15.278 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:33:15.279 [Test worker] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 22:33:15.279 [Test worker] WARN  com.revature.service.ClientService - Service layer - The client: 1 doesn't have the account: 1
+15 03 2022 - 22:33:15.280 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 1 doesn't exist
+15 03 2022 - 22:33:15.281 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 22:33:15.281 [Test worker] INFO  com.revature.service.ClientService - Service layer - add to the client abc the account ClientAccount{client_id=1, firstName='null', lastName='null', account_id=2, accountName='null', balance=40}
+15 03 2022 - 22:33:15.281 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:33:36.375 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 22:33:36.377 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 22:33:36.382 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='Name147', lastName='hello547', age=55, phoneNumber='4781561235'}
+15 03 2022 - 22:33:36.382 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client to have a firstname or lastname with no alphabet letters. Firstname: Name147 Lastname: hello547
+15 03 2022 - 22:33:36.383 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: aaa
+15 03 2022 - 22:33:36.383 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 22:33:36.384 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=55, phoneNumber='abc147584'}
+15 03 2022 - 22:33:36.384 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc147584
+15 03 2022 - 22:33:36.385 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='  test  ', lastName='  client  ', age=44, phoneNumber='  1478523699  '}
+15 03 2022 - 22:33:36.388 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: aaa
+15 03 2022 - 22:33:36.389 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client id: aaa is invalid
+15 03 2022 - 22:33:36.390 [Test worker] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 22:33:36.390 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 22:33:36.391 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.392 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 22:33:36.392 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 22:33:36.393 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 22:33:36.393 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:33:36.395 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 10
+15 03 2022 - 22:33:36.396 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=1, firstName='Name', lastName='hello', age=55, phoneNumber='abc324234'}
+15 03 2022 - 22:33:36.396 [Test worker] WARN  com.revature.service.ClientService - Service layer - The phone number provided have values different than numbers. Phone number: abc324234
+15 03 2022 - 22:33:36.396 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='test', lastName='client', age=44, phoneNumber='1478523699'}
+15 03 2022 - 22:33:36.397 [Test worker] INFO  com.revature.service.ClientService - Service layer to get the client with id: 100
+15 03 2022 - 22:33:36.398 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 22:33:36.398 [Test worker] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='name', lastName='hello', age=-2, phoneNumber='1234567897'}
+15 03 2022 - 22:33:36.399 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 22:33:36.400 [Test worker] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 22:33:36.400 [Test worker] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 100
+15 03 2022 - 22:33:36.401 [Test worker] WARN  com.revature.service.ClientService - Service layer - the client with id: 100 doesn't exist
+15 03 2022 - 22:36:43.244 [main] INFO  io.javalin.Javalin - 
+       __                      __ _            __ __
+      / /____ _ _   __ ____ _ / /(_)____      / // /
+ __  / // __ `/| | / // __ `// // // __ \    / // /_
+/ /_/ // /_/ / | |/ // /_/ // // // / / /   /__  __/
+\____/ \__,_/  |___/ \__,_//_//_//_/ /_/      /_/
+
+          https://javalin.io/documentation
+
+15 03 2022 - 22:36:43.252 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @479ms to org.eclipse.jetty.util.log.Slf4jLog
+15 03 2022 - 22:36:43.253 [main] INFO  io.javalin.Javalin - Starting Javalin ...
+15 03 2022 - 22:36:43.264 [main] INFO  io.javalin.Javalin - You are running Javalin 4.3.0 (released January 13, 2022).
+15 03 2022 - 22:36:43.264 [main] INFO  io.javalin.Javalin - No port specified, starting on port 8080. Call start(port) to change ports.
+15 03 2022 - 22:36:43.465 [main] INFO  io.javalin.Javalin - Listening on http://localhost:8080/
+15 03 2022 - 22:36:43.466 [main] INFO  io.javalin.Javalin - Javalin started in 214ms \o/
+15 03 2022 - 22:37:06.880 [JettyServerThreadPool-26] INFO  com.revature.main.Driver - GET request received for /clients
+15 03 2022 - 22:37:06.881 [JettyServerThreadPool-26] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 22:37:16.565 [JettyServerThreadPool-18] INFO  com.revature.main.Driver - GET request received for /clients/1
+15 03 2022 - 22:37:16.566 [JettyServerThreadPool-18] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 22:37:17.430 [JettyServerThreadPool-18] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:38:15.295 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients
+15 03 2022 - 22:38:15.295 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get all the clients
+15 03 2022 - 22:38:21.738 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - GET request received for /clients/1
+15 03 2022 - 22:38:21.738 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1
+15 03 2022 - 22:38:22.593 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:38:28.479 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - GET request received for /clients/1000
+15 03 2022 - 22:38:28.479 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer to get the client with id: 1000
+15 03 2022 - 22:38:29.333 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - the client with id: 1000 doesn't exist
+15 03 2022 - 22:38:29.334 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 1000 doesn't exist
+15 03 2022 - 22:38:36.816 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - GET request received for /clients/hyd
+15 03 2022 - 22:38:36.816 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer to get the client with id: hyd
+15 03 2022 - 22:38:36.816 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client id: hyd is invalid
+15 03 2022 - 22:38:36.816 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Id provided is invalid: hyd
+15 03 2022 - 22:39:00.657 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - POST request received for /clients
+15 03 2022 - 22:39:00.679 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer - add the clientClient{id=0, firstName='   Client  ', lastName='added  ', age=55, phoneNumber='7894561236'}
+15 03 2022 - 22:39:21.486 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - PUT request received for /clients/1
+15 03 2022 - 22:39:21.486 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer to update the client with id: 1
+15 03 2022 - 22:39:23.187 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - Successful return of the client with id: 1
+15 03 2022 - 22:39:48.497 [JettyServerThreadPool-25] INFO  com.revature.main.Driver - PUT request received for /clients/100
+15 03 2022 - 22:39:48.497 [JettyServerThreadPool-25] INFO  com.revature.service.ClientService - Service layer to update the client with id: 100
+15 03 2022 - 22:39:49.367 [JettyServerThreadPool-25] WARN  com.revature.service.ClientService - Service layer - The client attempted to be updated with the id: 100 doesn't exist
+15 03 2022 - 22:39:49.367 [JettyServerThreadPool-25] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client attempted to be updated with the id: 100 doesn't exist
+15 03 2022 - 22:39:59.271 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - DELETE request received for /clients/1
+15 03 2022 - 22:39:59.271 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - delete the client with id: 1
+15 03 2022 - 22:40:00.982 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client with id: 1
+15 03 2022 - 22:40:38.352 [JettyServerThreadPool-12] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 22:40:38.352 [JettyServerThreadPool-12] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 22:41:46.789 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - GET request received for /clients/5/accounts
+15 03 2022 - 22:41:46.789 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 5
+15 03 2022 - 22:41:48.496 [JettyServerThreadPool-23] WARN  com.revature.service.ClientService - Service layer - the client with id: 5 doesn't have accounts
+15 03 2022 - 22:41:48.496 [JettyServerThreadPool-23] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 5 doesn't have accounts
+15 03 2022 - 22:43:01.178 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/1
+15 03 2022 - 22:43:01.179 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - get the account 1 for the client 1
+15 03 2022 - 22:43:43.350 [JettyServerThreadPool-29] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts
+15 03 2022 - 22:43:43.350 [JettyServerThreadPool-29] INFO  com.revature.service.ClientService - Service layer - get all the accounts of the client 1
+15 03 2022 - 22:44:22.199 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/10
+15 03 2022 - 22:44:22.199 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - get the account 10 for the client 1
+15 03 2022 - 22:44:24.779 [JettyServerThreadPool-23] WARN  com.revature.service.ClientService - Service layer - the account with id: 10 doesn't exist
+15 03 2022 - 22:44:24.780 [JettyServerThreadPool-23] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 10 doesn't exist
+15 03 2022 - 22:44:32.370 [JettyServerThreadPool-16] INFO  com.revature.main.Driver - GET request received for /clients/1/accounts/abc
+15 03 2022 - 22:44:32.370 [JettyServerThreadPool-16] INFO  com.revature.service.ClientService - Service layer - get the account abc for the client 1
+15 03 2022 - 22:44:34.076 [JettyServerThreadPool-16] WARN  com.revature.service.ClientService - Service layer - the account id: abc is invalid
+15 03 2022 - 22:44:34.077 [JettyServerThreadPool-16] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: Account Id provided is invalid: abc
+15 03 2022 - 22:44:58.950 [JettyServerThreadPool-23] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 22:44:58.952 [JettyServerThreadPool-23] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 22:46:08.253 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - POST request received for /clients/4/accounts
+15 03 2022 - 22:46:08.253 [JettyServerThreadPool-27] INFO  com.revature.service.ClientService - Service layer - add to the client 4 the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=20, accountName='null', balance=555}
+15 03 2022 - 22:46:10.839 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the account with id: 20 doesn't exist
+15 03 2022 - 22:46:10.839 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 20 doesn't exist
+15 03 2022 - 22:46:19.048 [JettyServerThreadPool-17] INFO  com.revature.main.Driver - POST request received for /clients/abc/accounts
+15 03 2022 - 22:46:19.048 [JettyServerThreadPool-17] INFO  com.revature.service.ClientService - Service layer - add to the client abc the account ClientAccount{client_id=0, firstName='null', lastName='null', account_id=2, accountName='null', balance=555}
+15 03 2022 - 22:46:19.048 [JettyServerThreadPool-17] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:46:19.048 [JettyServerThreadPool-17] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 22:46:32.932 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/1
+15 03 2022 - 22:46:55.766 [JettyServerThreadPool-17] INFO  com.revature.main.Driver - PUT request received for /clients/1/accounts/100
+15 03 2022 - 22:46:58.328 [JettyServerThreadPool-17] WARN  com.revature.service.ClientService - Service layer - the account with id: 100 doesn't exist
+15 03 2022 - 22:46:58.328 [JettyServerThreadPool-17] WARN  c.r.controller.ExceptionController - The account attempted to be retrieve was not found. Exception message: The account with the id 100 doesn't exist
+15 03 2022 - 22:47:19.911 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - PUT request received for /clients/abc/accounts/abc
+15 03 2022 - 22:47:19.911 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:47:19.911 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
+15 03 2022 - 22:47:26.690 [JettyServerThreadPool-17] INFO  com.revature.main.Driver - DELETE request received for /clients/1/accounts/1
+15 03 2022 - 22:47:30.140 [JettyServerThreadPool-17] INFO  com.revature.service.ClientService - Service layer - Successful delete of the client 1 with account id: 1
+15 03 2022 - 22:47:51.076 [JettyServerThreadPool-27] INFO  com.revature.main.Driver - DELETE request received for /clients/20/accounts/1
+15 03 2022 - 22:47:51.947 [JettyServerThreadPool-27] WARN  com.revature.service.ClientService - Service layer - the client with id: 20 doesn't exist
+15 03 2022 - 22:47:51.947 [JettyServerThreadPool-27] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was not found. Exception message: The client with the id 20 doesn't exist
+15 03 2022 - 22:48:03.662 [JettyServerThreadPool-17] INFO  com.revature.main.Driver - DELETE request received for /clients/abc/accounts/abc
+15 03 2022 - 22:48:03.662 [JettyServerThreadPool-17] WARN  com.revature.service.ClientService - Service layer - the client id: abc is invalid
+15 03 2022 - 22:48:03.662 [JettyServerThreadPool-17] WARN  c.r.controller.ExceptionController - The client attempted to be retrieve was a invalid input. Exception message: the client id provided is invalid: abc
